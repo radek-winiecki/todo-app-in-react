@@ -47,7 +47,7 @@ class App extends React.Component {
             <div className="App">
                 todo app
                 <AddTask/>
-                <TaskList/>
+                <TaskList tasks={this.state.tasks} />
             </div>
         );
     }
