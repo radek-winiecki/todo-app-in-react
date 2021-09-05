@@ -42,12 +42,20 @@ class App extends React.Component {
         ]
     }
 
+    deleteTask = () => {
+        console.log("delete w komponencie app")
+    }
+
+    changeTaskStatus = () => {
+        console.log("change w komponencie app")
+    }
+
     render() {
         return (
             <div className="App">
                 todo app
                 <AddTask/>
-                <TaskList tasks={this.state.tasks} />
+                <TaskList tasks={this.state.tasks} delete={this.deleteTask} change={this.changeTaskStatus} />
             </div>
         );
     }
