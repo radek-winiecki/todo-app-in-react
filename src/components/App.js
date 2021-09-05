@@ -42,12 +42,12 @@ class App extends React.Component {
         ]
     }
 
-    deleteTask = () => {
-        console.log("delete w komponencie app")
+    deleteTask = (id) => {
+        console.log("delete elementu o id " + id)
     }
 
-    changeTaskStatus = () => {
-        console.log("change w komponencie app")
+    changeTaskStatus = (id) => {
+        console.log("change w stanie elementu o id " + id)
     }
 
     render() {
