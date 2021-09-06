@@ -36,7 +36,7 @@ class App extends React.Component {
                 text: 'fryzjer',
                 date: '2021-10-29',
                 important: true,
-                active: false,
+                active: true,
                 finishDate: null,
             },
         ]
