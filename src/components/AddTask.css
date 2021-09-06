@@ -14,3 +14,21 @@ input {
     margin: 20px;
     font-size: 20px;
 }
+
+button.add_task {
+    color: white;
+    background-color: red;
+    transition: 0.3s;
+    border-radius: 15px;
+    cursor: pointer;
+    animation: addTask_pulse 1s linear infinite alternate;
+}
+
+@keyframes addTask_pulse {
+    0% {
+        color: rgba(255, 255, 255, 0.6);
+    }
+    100% {
+        color: rgb(255, 255, 255);
+    }
+}

@@ -77,7 +77,7 @@ class AddTask extends Component {
                     onChange={this.handleDate}
                 />
                 <br/>
-                <button onClick={this.handleClick}>Add Task!</button>
+                <button className="add_task" onClick={this.handleClick}>Add Task!</button>
             </div>
         );
     }
