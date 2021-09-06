@@ -1,5 +1,4 @@
 import React from "react";
-import logo from '../logo.svg';
 import './App.css';
 import AddTask from "./AddTask";
 import TaskList from "./TaskList";
@@ -75,7 +74,7 @@ class App extends React.Component {
     render() {
         return (
             <div className="App">
-                todo app
+                <h1>TO-DO APP</h1>
                 <AddTask/>
                 <TaskList tasks={this.state.tasks} delete={this.deleteTask} change={this.changeTaskStatus} />
             </div>
