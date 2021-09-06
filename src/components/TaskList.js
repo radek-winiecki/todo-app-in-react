@@ -20,7 +20,9 @@ const TaskList = (props) => {
 
             <div className="done">
                 <h3>Zadania zrobione <em>({done.length})</em></h3>
-                {doneTasks.slice(0, 5)}
+                {done.length > 5 && <span style={{fontSize: 12}}
+                >wyświetlonych jest jedynie 5 ostatnich zadań</span>}
+                {doneTasks.slice(0, 2)}
             </div>
         </>
     );
