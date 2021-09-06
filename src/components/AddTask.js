@@ -38,7 +38,7 @@ class AddTask extends Component {
                 })
             }
         } else {
-            alert("za krótka nazwa!");
+            alert("The name is too short!");
         }
     }
 
@@ -57,7 +57,7 @@ class AddTask extends Component {
             <div className="form">
                 <input
                     type="text"
-                    placeholder="dodaj zadanie"
+                    placeholder="Add Task"
                     value={this.state.text}
                     onChange={this.handleText}
                 />
@@ -67,8 +67,8 @@ class AddTask extends Component {
                     id="important"
                     onChange={this.handleCheckbox}
                 />
-                <label htmlFor="important">Priorytet</label> <br/>
-                <label htmlFor="date">Do kiedy zrobić: </label>
+                <label htmlFor="important">Priority</label> <br/>
+                <label htmlFor="date">By when to do:</label>
                 <input
                     type="date"
                     value={this.state.date}
@@ -77,7 +77,7 @@ class AddTask extends Component {
                     onChange={this.handleDate}
                 />
                 <br/>
-                <button onClick={this.handleClick}>Dodaj</button>
+                <button onClick={this.handleClick}>Add Task!</button>
             </div>
         );
     }

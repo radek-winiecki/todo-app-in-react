@@ -10,7 +10,7 @@ class App extends React.Component {
         tasks: [
             {
                 id: 0,
-                text: 'zagrać w wiedźmina',
+                text: 'learn programming',
                 date: '2021-10-15',
                 important: true,
                 active: true,
@@ -18,7 +18,7 @@ class App extends React.Component {
             },
             {
                 id: 1,
-                text: 'zrobić dobry uczynek',
+                text: 'go to the gym',
                 date: '2021-10-21',
                 important: false,
                 active: true,
@@ -26,7 +26,7 @@ class App extends React.Component {
             },
             {
                 id: 2,
-                text: 'pomalować dom',
+                text: 'cook lunch',
                 date: '2021-10-23',
                 important: false,
                 active: true,
@@ -34,7 +34,7 @@ class App extends React.Component {
             },
             {
                 id: 3,
-                text: 'fryzjer',
+                text: 'clean room',
                 date: '2021-10-29',
                 important: true,
                 active: true,
