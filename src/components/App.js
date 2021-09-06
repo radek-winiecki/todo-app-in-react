@@ -36,7 +36,7 @@ class App extends React.Component {
                 text: 'fryzjer',
                 date: '2021-10-29',
                 important: true,
-                active: true,
+                active: false,
                 finishDate: null,
             },
         ]
@@ -64,6 +64,7 @@ class App extends React.Component {
         tasks.forEach(task => {
             if (task.id === id) {
                 task.active = false;
+                task.finishDate = new Date().getTime();
             }
         })
         this.setState({
