@@ -76,7 +76,11 @@ class App extends React.Component {
             <div className="App">
                 <h1>TO-DO APP</h1>
                 <AddTask/>
-                <TaskList tasks={this.state.tasks} delete={this.deleteTask} change={this.changeTaskStatus} />
+                <TaskList
+                    tasks={this.state.tasks}
+                    delete={this.deleteTask}
+                    change={this.changeTaskStatus}
+                />
             </div>
         );
     }
