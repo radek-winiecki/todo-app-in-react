@@ -25,7 +25,7 @@ const Task = (props) => {
             <div>
                 <p>
                     <strong>{text}</strong> <em> (zrobić do {date}) </em> <br/>
-                    - potwierdzenie wykonania <span>{finish}</span>
+                    - potwierdzenie wykonania <span>{finish} </span>
                     <button onClick={() => props.delete(id)}>X</button>
                 </p>
             </div>

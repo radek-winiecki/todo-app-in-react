@@ -6,6 +6,20 @@ const TaskList = (props) => {
     const active = props.tasks.filter(task => task.active);
     const done = props.tasks.filter(task => !task.active);
 
+    // done.sort((a, b) => b.finishDate - a.finishDate);
+
+    if (done.length >= 2) {
+        done.sort((a, b) => {
+            if (a.finishDate > b.finishDate) {
+                return -1;
+            } else if (a.finishDate < b.finishDate) {
+                return 1;
+            } else {
+                return 0;
+            }
+        })
+    }
+
     const activeTasks = active.map(task =>
         <Task
             key={task.id}
