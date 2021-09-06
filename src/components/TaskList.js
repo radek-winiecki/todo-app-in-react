@@ -20,7 +20,7 @@ const TaskList = (props) => {
 
             <div className="done">
                 <h3>Zadania zrobione <em>({done.length})</em></h3>
-                {doneTasks}
+                {doneTasks.slice(0, 5)}
             </div>
         </>
     );
